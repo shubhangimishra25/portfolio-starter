@@ -41,10 +41,10 @@ const Banner = () => {
                 sequence={[
                   'Developer',
                   2000,
-                  // 'Designer',
-                  // 2000,
-                  // 'Youtuber',
-                  // 2000,
+                  'Engineer',
+                  2000,
+                  'Enthusiast',
+                  2000,
                 ]}
                 speed={50}
                 className='text-accent'
@@ -83,9 +83,6 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
             >
-              <a href='#'>
-                <FaYoutube />
-              </a>
               <a href='https://github.com/shubhangimishra25'>
                 <FaGithub />
               </a>
