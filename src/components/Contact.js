@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef,useState} from 'react';
 import emailjs from '@emailjs/browser';
 // motion
 import { motion } from 'framer-motion';
@@ -8,19 +8,32 @@ import { fadeIn } from '../variants';
 const Contact = () => {
   
     const form = useRef();
-  
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-        .then((result) => {
-            console.log(result.text);
+      emailjs.sendForm(process.env.REACT_APP_ID, process.env.REACT_APP_TEMPLATE_KEY, form.current, process.env.REACT_APP_PUBLIC_KEY)
+      .then(
+        (result) => {
+          console.log(result);
+          if (result.status === 200) {
+            form.current.reset();
+            setShowSuccessMessage(true);
+            setTimeout(() => {
+              setShowSuccessMessage(false);
+            }, 5000); // Hide the success message after 5 seconds
+          }
         }, (error) => {
             console.log(error.text);
         });
     };
   return (
     <section className='py-16 lg:section' id='contact'>
+        {showSuccessMessage && (
+      <div className='bg-green-500 text-white text-center py-2 fixed top-16 left-1/2 transform -translate-x-1/2 z-50 rounded-md'>
+          Your message has been sent successfully!
+        </div>
+      )}
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row'>
           {/* text */}

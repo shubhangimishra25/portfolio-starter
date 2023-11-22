@@ -7,6 +7,7 @@ import { fadeIn } from '../variants';
 import Img1 from '../assets/portfolio-img.png';
 import Img2 from '../assets/portfolio-img2.png';
 import Img3 from '../assets/portfolio-img5.png';
+import { BsArrowUpRight, BsArrowUpRightSquare } from 'react-icons/bs';
 
 const Work = () => {
   return (
@@ -24,13 +25,11 @@ const Work = () => {
             <div>
               <h2 className='h2 leading-tight text-accent'>
                 My Latest <br />
-                Work.
+                Projects.
               </h2>
               <p className='max-w-sm mb-16'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellat, hic! Harum quis, cum velit neque esse eos molestias
-                doloremque explicabo!
-              </p>
+              During my master's program, I had the opportunity to collaborate with remarkable individuals on exciting projects,
+              here are few :            </p>
               <button className='btn btn-sm'>View all projects</button>
             </div>
             {/* image */}
@@ -44,12 +43,14 @@ const Work = () => {
                 alt=''
               />
               {/* pretitle */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+             
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50 '>
+                <span className='text-gradient'>Open App Mobile</span>
               </div>
               {/* title */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-10 transition-all duration-700 z-50 space-x-5 '>
+              <button className='btn btn-sm  '>React Native</button>
+              <button className='btn btn-sm'>Material UI</button>
               </div>
             </div>
           </motion.div>
@@ -70,13 +71,15 @@ const Work = () => {
                 src={Img2}
                 alt=''
               />
-              {/* pretitle */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+               {/* pretitle */}
+             
+               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50 '>
+                <span className='text-gradient'>Open App Mobile</span>
               </div>
               {/* title */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-10 transition-all duration-700 z-50 space-x-5 '>
+              <button className='btn btn-sm  '>React Native</button>
+              <button className='btn btn-sm'>Material UI</button>
               </div>
             </div>
             {/* image */}
@@ -90,12 +93,27 @@ const Work = () => {
                 alt=''
               />
               {/* pretitle */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+             
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50 '>
+                <span className='text-gradient'>Open App Website</span>
+               
+                      
               </div>
               {/* title */}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-10 transition-all duration-700 z-50 space-x-5 flex-row '>
+              <button className='btn btn-sm  '>React</button>
+              <button className='btn btn-sm'>Tailwind CSS</button>
+           <button>  <a
+                        href='https://openapponline.com'
+                        target="_blank"
+                        className='btn w-9 h-9  flex justify-center items-center '
+                      >
+                        
+                        
+                        <BsArrowUpRight />
+                      </a></button>
+            
+                    
               </div>
             </div>
           </motion.div>

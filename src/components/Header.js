@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import { fadeIn } from '../variants';
+import { Button } from 'react-scroll';
+
 
 
 const Header = () => {
@@ -18,7 +20,7 @@ const Header = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
-              <button className='btn btn-lg'>Contact me</button>
+              <Button to='contact' smooth={true} className='btn btn-lg' >Contact me</Button>
               <a href='#' className='text-gradient btn-link'>
                 My Portfolio
               </a>
