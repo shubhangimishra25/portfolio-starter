@@ -21,7 +21,7 @@ const Header = () => {
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
               <Button to='contact' smooth={true} className='btn btn-lg' >Contact me</Button>
-              <a href="https://shubhangimishra25.github.io/assets/GHCRESUME.pdf"  className='text-gradient btn-link'>
+              <a href="https://shubhangimishra25.github.io/portfolio-starter/assets/GHCRESUME.pdf"  className='text-gradient btn-link'>
                 My Portfolio
               </a>
             </motion.div>
