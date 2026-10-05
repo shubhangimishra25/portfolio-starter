@@ -59,7 +59,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'
             >
-            " Software engineer driven by a mission for innovative solutions, meticulous about software debelopment, collaboration, and mentorship. 
+            " Software engineer driven by a mission for innovative solutions, meticulous about software development, collaboration, and mentorship. 
              With a keen eye for detail and a love for crafting, aims to make a tangible impact in the tech world.
               Excited to contribute significantly to a thriving company, fueled by a commitment to drive meaningful change."
             </motion.p>

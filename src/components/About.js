@@ -36,23 +36,21 @@ const About = () => {
           >
             <h2 className='h2 text-accent'>About me.</h2>
             <h3 className='h3 mb-4'>
-              I'm a  Software Engineer with over 4 years of
+              I'm a Senior Software Engineer with 6+ years of
               experience.
             </h3>
             <p className='mb-6'>
-             
-             Based in  New York, with industry experience of working with prestigious companies like TCS, Teletracking Technologies Inc,
-             AIA, Diligenta etc.
-             Looking for my next full time role where I can put my expertise in work and always eager to learn new.
-            
-
-
+              Based in New York, I build Java-based backend, distributed, and
+              full-stack applications across financial services and retail,
+              with industry experience at Capital One, JP Morgan Chase, and
+              Accenture. I also work hands-on with Generative AI, RAG, and LLM
+              workflows. Open to relocation and new opportunities.
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={4} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={6} duration={3} /> : null}
                   +
 
                 </div>

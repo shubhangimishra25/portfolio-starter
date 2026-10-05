@@ -16,36 +16,38 @@ const renderDescription = (description) => {
 // services data
 const services = [
   {
-    name: "Tata Consultancy Services",
-    position: "Software Engineer",
+    name: "Capital One",
+    position: "Senior Software Development Engineer",
     description:
-`
- Diligenta (UK):
--Ensure efficient call routing with a response time of less than 30 seconds and target a 90% customer satisfaction rate.
-- Continuously optimize system performance for scalability, aiming for a 20% increase in call handling capacity within the next quarter.
-- Implement real-time call notifications and consultation features to enable agents to collaborate seamlessly, reducing call transfer times by at least 20%.
-- Maintain a rapid response rate to reported technical issues, with a goal of resolving 95% of reported problems within 24 hours to minimize disruption to operations.\n\n\n\n\n\n\n\n 
-AIA (Philippines):
--Developed advanced AEM templates, components,and workflowsusing REST, Java, Sling, AEM,and Angular to streamline content management processes,leading toa 30% reduction in content creation time.
--Utilized version control with GIT for efficient project management including automated builds and collaboration with JIRAand Confluence. Enhanced AEM personalization by implementing JavaScript solutions resulting ina 20% reduction in call transfer times.
-TCS Business 4.0 (United States):`,
-link: "Learn more",
-    date: "2018 Oct - 2021 Aug",
-    location: "India",
+`- Architected Java/Spring Boot microservices for credit-card account servicing, processing 600K+ requests daily.
+- Reduced median transaction and balance lookup latency from 118 ms to 34 ms through PostgreSQL tuning and Redis caching.
+- Engineered Kafka-based event processing handling 95K+ events per hour for transaction monitoring and notifications.
+- Contributed to a GenAI-powered RAG workflow across 30K+ knowledge records, saving about 5 hours of investigation per week.`,
+    link: "Learn more",
+    date: "2024 May - Present",
+    location: "New York, USA",
   },
   {
-    name: "Teletracking Technologies Inc",
-    position: "Software Enginner Intern",
-
+    name: "JP Morgan Chase & Co.",
+    position: "Software Engineer",
     description:
-    `-Contributed tom igrating a .NETWCF microservicefrom AzuretoAWS,reducing hosting costs by3 0%. Docker, Kubernetes,and Terraform were used for infrastructure setup.
-    -Deployed multiple .NET applications on AWS ECS (Fargate and EC2), reducing deployment time by25%. 
-    -Documented deployment steps and pros & cons.
-    -Built a CircleCI pipeline,making deployments 40% faster. 
-    -IntegratedWindows execution orb and configured Spinnaker CD pipelines, reducing deployment errors by 50%.`,
+`- Built Java/Spring Boot services for payment initiation, transaction validation, and settlement updates.
+- Refactored account servicing into 20+ REST APIs and React/TypeScript apps, cutting request processing time from 8 seconds to under 3.
+- Hardened onboarding and KYC workflows with Spring Security, OAuth2/JWT, and RBAC, lowering exceptions by 35%.`,
     link: "Learn more",
-    date: "2022 May - 2022 Aug",
-    location: "Pensylvania,USA",
+    date: "2023 Jun - 2024 Apr",
+    location: "New York, USA",
+  },
+  {
+    name: "Accenture",
+    position: "Software Engineer",
+    description:
+`- Built Java/Spring Boot microservices and Angular components for retail order management, cart, and checkout.
+- Engineered Kafka event pipelines processing 35K+ events per minute across distributed retail services.
+- Reduced critical query time from 17 seconds to under 5 seconds through MySQL and PostgreSQL tuning.`,
+    link: "Learn more",
+    date: "2018 Apr - 2021 Dec",
+    location: "India",
   },
   // {
   //   name: 'Digital Marketing',
@@ -63,9 +65,9 @@ link: "Learn more",
 
 const Services = () => {
   return (
-    <section className="section" id="services">
+    <section className="section lg:h-auto lg:min-h-screen" id="services">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row lg:gap-x-12">
           {/* text & image */}
           <motion.div
             variants={fadeIn("right", 0.3)}
@@ -75,11 +77,31 @@ const Services = () => {
             className="flex-1  lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0  "
           >
             <h2 className="h2 text-accent mb-6">What I Have Done.</h2>
-            <h3 className="h3 max-w-[455px] mb-16">
-              I've worked as an Engineer
-              in the industry and gained some 
-              good experience working on projects.
+            <h3 className="h3 max-w-[455px] mb-12">
+              6+ years building backend, distributed, and full-stack
+              systems in financial services and retail.
             </h3>
+            {/* education & certifications */}
+            <div className="flex flex-col gap-y-8 mb-16">
+              <div>
+                <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-2">
+                  Education
+                </h4>
+                <p className="font-secondary leading-tight">
+                  Master of Science in Computer Science <br />
+                  University at Buffalo, 2023
+                </p>
+              </div>
+              <div>
+                <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-2">
+                  Certifications
+                </h4>
+                <p className="font-secondary leading-tight">
+                  AWS Certified Solutions Architect - Associate <br />
+                  AWS Certified Cloud Practitioner
+                </p>
+              </div>
+            </div>
             <button className="btn btn-sm">See my work</button>
           </motion.div>
           {/* services */}
